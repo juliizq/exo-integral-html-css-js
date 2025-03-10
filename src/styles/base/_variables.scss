@@ -1,0 +1,17 @@
+// **Colores principales**
+$primary: #363137;        // Color principal (usado en elementos clave como botones y encabezados)
+$secondary: #413c42;      // Color secundario (usado para destacar elementos secundarios)
+
+// **Colores de fondo y superficies**
+$background: #ffffff;     // Fondo principal de la UI
+$surface: #f9f9f9;        // Fondo de tarjetas o secciones elevadas
+
+// **Colores para textos y elementos sobre fondos**
+$on-primary: #ffffff;     // Color del texto sobre el color primario
+$on-secondary: #ffffff;   // Color del texto sobre el color secundario
+$on-background: #363137;  // Color del texto sobre el fondo principal
+$on-surface: #363137;     // Color del texto sobre superficies
+
+// **Colores adicionales**
+$border: #fafafa;         // Líneas divisorias y bordes sutiles
+$highlight: #fefefe;      // Color para detalles llamativos

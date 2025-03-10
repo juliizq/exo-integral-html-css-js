@@ -1,0 +1,39 @@
+@import '../base/mixins';
+@import '../base/variables';
+@import '../base/webfonts';
+
+.nav{
+    //width: 100%;
+    min-height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__logo{
+        width: 4rem;
+    }
+
+    &__menu{
+        &-mobile{
+            &--icon-schedule{
+                width: 2rem;
+            }
+        }
+    }
+
+
+    /* Tablet (>= 768px) */
+    @include breakpoint(tablet) {
+
+    }
+
+    /* Desktop (>= 1024px) */
+    @include breakpoint(desktop) {
+
+    }
+
+    /* Large screens (>= 1440px) */
+    @include breakpoint(large) {
+
+    }  
+}
