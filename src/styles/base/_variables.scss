@@ -1,17 +1,23 @@
 // **Colores principales**
-$primary: #363137;        // Color principal (usado en elementos clave como botones y encabezados)
-$secondary: #413c42;      // Color secundario (usado para destacar elementos secundarios)
+$primary: #744DF1;        // Color principal (usado en elementos clave como botones y encabezados)
+$secondary: #FF3700;      // Color secundario (usado para destacar elementos secundarios)
 
 // **Colores de fondo y superficies**
-$background: #ffffff;     // Fondo principal de la UI
-$surface: #f9f9f9;        // Fondo de tarjetas o secciones elevadas
+$background: #F9F9F9;     // Fondo principal de la UI
+$surface: #FEFEFE;        // Fondo de tarjetas o secciones elevadas
 
 // **Colores para textos y elementos sobre fondos**
-$on-primary: #ffffff;     // Color del texto sobre el color primario
+$on-primary: #FEFEFE;     // Color del texto sobre el color primario
 $on-secondary: #ffffff;   // Color del texto sobre el color secundario
-$on-background: #363137;  // Color del texto sobre el fondo principal
-$on-surface: #363137;     // Color del texto sobre superficies
+$on-background: #343237;  // Color del texto sobre el fondo principal
+$on-surface: #343237;     // Color del texto sobre superficies
 
 // **Colores adicionales**
 $border: #fafafa;         // Líneas divisorias y bordes sutiles
 $highlight: #fefefe;      // Color para detalles llamativos
+
+// **Margins inline **
+$margin-xs: 16px;
+$margin-sm: 24px;
+$margin-md: 32px;
+$margin-lg: 48px;
