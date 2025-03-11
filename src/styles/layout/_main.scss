@@ -8,10 +8,8 @@
     position: relative;
 
     &__image-container{
-        //background-color: red;
         background-image: url('/dist/assets/images/page-picture/presents.png');
         background-repeat: no-repeat;
-        overflow: visible;
         position: absolute;
         bottom: 0; // Esto la pega abajo en vez de arriba
         left: 50%;
