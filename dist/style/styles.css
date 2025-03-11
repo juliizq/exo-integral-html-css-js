@@ -44,7 +44,7 @@ body {
 }
 @font-face {
   font-family: "codeconf";
-  src: url("/dist/assets/fonts/codeconf-all/fonts/codeconf.woff") format("woff");
+  src: url("/dist/assets/fonts/codeconf-all/codeconf.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -176,7 +176,7 @@ body {
 }
 @font-face {
   font-family: "codeconf";
-  src: url("/dist/assets/fonts/codeconf-all/fonts/codeconf.woff") format("woff");
+  src: url("/dist/assets/fonts/codeconf-all/codeconf.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -276,22 +276,72 @@ body {
   content: "\e94f";
 }
 
+header {
+  margin-inline: 16px;
+  /* Tablet (>= 768px) */
+  /* Desktop (>= 1024px) */
+  /* Large screens (>= 1440px) */
+}
+@media (min-width: 768px) {
+  header {
+    margin-inline: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    margin-inline: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    margin-inline: 48px;
+  }
+}
+
 .nav {
-  min-height: 6rem;
+  min-height: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   /* Tablet (>= 768px) */
   /* Desktop (>= 1024px) */
   /* Large screens (>= 1440px) */
 }
 .nav__logo {
-  width: 4rem;
+  width: 6rem;
 }
-.nav__menu-mobile--icon-schedule {
-  width: 2rem;
+.nav__menu-mobile {
+  display: flex;
+  gap: 0.5rem;
+}
+.nav__menu-mobile-icon {
+  font-size: 1.1rem;
+  color: #343237;
+}
+.banner {
+  background-color: #744DF1;
+  height: 12rem;
+  overflow: visible;
+  position: relative;
+}
+.banner__image-container {
+  background-image: url("/dist/assets/images/page-picture/presents.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  /* Tablet (>= 768px) */
+  /* Desktop (>= 1024px) */
+  /* Large screens (>= 1440px) */
 }
 body {
-  background-color: #ffffff;
+  background-color: #F9F9F9;
   width: 100vw;
 }/*# sourceMappingURL=styles.css.map */

@@ -37,12 +37,12 @@
 }
 
 @font-face {
-    font-family: 'codeconf';
-    src:  url('/dist/assets/fonts/codeconf-all/fonts/codeconf.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+  font-family: 'codeconf';
+  src:  url('/dist/assets/fonts/codeconf-all/codeconf.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
