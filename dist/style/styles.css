@@ -144,6 +144,26 @@ body {
   content: "\e94f";
 }
 
+h2 {
+  font-family: "museo";
+  font-size: 3.052rem;
+  line-height: 0.9;
+  font-weight: 600;
+  color: #FEFEFE;
+}
+
+h3 {
+  font-family: "museo";
+  font-size: 1.266rem;
+  font-weight: 400;
+  color: #6A5F86;
+}
+
+p {
+  font-family: "league spartan";
+  letter-spacing: 0.2px;
+}
+
 @font-face {
   font-family: "league spartan";
   src: url("/dist/assets/fonts/leaguespartan/LeagueSpartanVariable.woff2") format("woff2");
@@ -317,31 +337,79 @@ header {
 }
 .nav__menu-mobile-icon {
   font-size: 1.1rem;
-  color: #343237;
+  color: #6A5F86;
 }
 .banner {
   background-color: #744DF1;
   height: 12rem;
   overflow: visible;
   position: relative;
+  margin-block-start: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.banner__title {
+  z-index: 3;
+  position: inherit;
+  margin-block-end: 1rem;
 }
 .banner__image-container {
   background-image: url("/dist/assets/images/page-picture/presents.png");
   background-repeat: no-repeat;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   background-size: cover;
   background-position: center;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   z-index: 2;
   /* Tablet (>= 768px) */
   /* Desktop (>= 1024px) */
   /* Large screens (>= 1440px) */
 }
+.breadcrumb {
+  margin-inline: 16px;
+}
+
+.orators_all {
+  padding-inline: 16px;
+  width: 100vw;
+}
+.orators_all .orator {
+  display: flex;
+  padding-block: 1.5rem;
+}
+.orators_all .orator__left {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.orators_all .orator__left .orator__location {
+  color: rgb(170, 161, 187);
+}
+.orators_all .orator__right .orator__pict {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  width: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 body {
   background-color: #F9F9F9;
   width: 100vw;
+}
+
+.breakline {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */

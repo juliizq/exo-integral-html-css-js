@@ -4,6 +4,7 @@
 @import 'base/mixins';
 @import 'base/reset';
 @import 'base/webfonts';
+@import 'base/typography';
 
 @import 'layout/header';
 @import 'layout/main';
@@ -12,4 +13,14 @@
 body{
     background-color: $background;
     width: 100vw;
+}
+
+.breakline{
+    display: block;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
