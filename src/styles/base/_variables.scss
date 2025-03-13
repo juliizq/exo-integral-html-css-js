@@ -4,7 +4,9 @@ $secondary: #FF3700;      // Color secundario (usado para destacar elementos sec
 
 // **Colores de fondo y superficies**
 $background: #F9F9F9;     // Fondo principal de la UI
-$surface: #FEFEFE;        // Fondo de tarjetas o secciones elevadas
+$surface: #FEFEFE;   
+$surface-secondary: #f1f1f1;
+$surface-third: #343237;
 
 // **Colores para textos y elementos sobre fondos**
 $on-primary: #FEFEFE;     // Color del texto sobre el color primario

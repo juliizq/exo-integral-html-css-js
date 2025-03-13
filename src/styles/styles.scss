@@ -8,6 +8,7 @@
 
 @import 'layout/header';
 @import 'layout/main';
+@import 'layout/footer';
 
 
 body{
@@ -17,6 +18,10 @@ body{
 
 .breakline{
     display: block;
+}
+
+.flex{
+    display: flex;
 }
 
 img{
@@ -43,4 +48,18 @@ img{
 
 a{
     text-decoration: none;
+}
+
+input{
+    background: transparent;
+    border: none; 
+    outline: none;
+}
+
+.primary{
+    color: $primary;
+}
+
+i{
+    display: flex;
 }
