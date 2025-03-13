@@ -125,54 +125,6 @@ const oratorsData = [
 ];
 
 
-
-// oratorsData.forEach(orator => {
-//     const card = document.createElement("div");
-//     card.classList.add("orator");
-
-//     card.innerHTML = `
-//         <!-- Vista por defecto -->
-//         <div class="orator__default">
-//             <div class="orator__left">
-//                 <h3 class="orator__name">
-//                     ${orator.firstName}
-//                     <span class="breakline">${orator.lastName}</span>
-//                 </h3>
-//                 <p class="orator__location">${orator.location}</p>
-//             </div>
-//             <div class="orator__right">
-//                 <div class="orator__pict">
-//                     <img src="${orator.img}" alt="${orator.firstName} ${orator.lastName}">
-//                 </div>
-//             </div>
-//         </div>
-
-//         <!-- Vista con detalles -->
-//         <div class="orator__details">
-//             <header>
-//                 <h3 class="orator__name">${orator.firstName} ${orator.lastName}</h3>
-//             </header>
-//             <main>
-//                 <h4 class="orator__title">${orator.eventTitle}</h4>
-//                 <p class="orator__description">${orator.description}</p>                
-//             </main>
-//             <footer>
-//                 <div class="footer-left">
-//                     <i class="nav__menu-mobile-icon icon-heart_full"></i>
-//                     <p class="orator__time">${orator.time}</p>
-//                     <p>|</p>
-//                     <p class="orator__info">${orator.additionalInfo}</p>
-//                 </div>
-//                 <a class="orator__about-CTA button__secondary-outline" href="#" target="_blank">about</a>
-//             </footer>
-//         </div>
-//     `;
-
-
-//     container.appendChild(card);
-// });
-
-
 oratorsData.forEach(orator => {
     const card = document.createElement("div");
     card.classList.add("orator");
@@ -232,9 +184,5 @@ oratorsData.forEach(orator => {
 });
 
 
-// document.querySelectorAll(".orator").forEach(card => {
-//     card.addEventListener("click", () => {
-//         card.classList.toggle("active");
-//     });
-// });
+
 
