@@ -24,3 +24,23 @@ img{
     height: 100%;
     object-fit: cover;
 }
+
+.button__secondary-outline{
+    border: 1px solid $secondary;
+    border-radius: 3rem;
+    background-color: transparent;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    text-transform: uppercase;
+    color: $secondary;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $secondary;
+        color: $on-secondary;
+    }
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,5 +1,5 @@
 // **Colores principales**
-$primary: #744DF1;        // Color principal (usado en elementos clave como botones y encabezados)
+$primary: #775AF2;        // Color principal (usado en elementos clave como botones y encabezados)
 $secondary: #FF3700;      // Color secundario (usado para destacar elementos secundarios)
 
 // **Colores de fondo y superficies**
@@ -11,7 +11,8 @@ $on-primary: #FEFEFE;     // Color del texto sobre el color primario
 $on-secondary: #ffffff;   // Color del texto sobre el color secundario
 $on-background-primary: #6A5F86;
 $on-background-secondary: rgb(170, 161, 187);  // Color del texto sobre el fondo principal
-$on-surface: #343237;     // Color del texto sobre superficies
+$on-surface-primary: #343237;
+$on-surface-secondary: #5b5459; 
 
 // **Colores adicionales**
 $border: #fafafa;         // Líneas divisorias y bordes sutiles

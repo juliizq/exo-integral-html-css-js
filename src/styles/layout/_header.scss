@@ -2,8 +2,8 @@
 @import "../base/variables";
 @import "../base/webfonts";
 
-header {
-  margin-inline: $margin-xs;
+nav {
+  
 
   /* Tablet (>= 768px) */
   @include breakpoint(tablet) {
@@ -28,6 +28,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-inline: $margin-xs;
 
   &__logo {
     width: 6rem;
