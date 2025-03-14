@@ -441,16 +441,21 @@ main {
   grid-template-columns: 1fr;
   gap: 1rem;
   background-color: #f1f1f1;
+  justify-items: center;
 }
 @media (min-width: 768px) {
   .orators_all {
     padding-block-start: 2rem;
     padding-block-end: 4rem;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
-    max-width: 800px;
     padding-inline: 24px;
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
+  }
+}
+@media (desktop) {
+  .orators_all {
+    max-width: 1000px;
   }
 }
 .orators_all .orator {
@@ -548,6 +553,9 @@ main {
   }
   .orators_all .orator__default .orator__left {
     padding-inline-start: 1rem;
+  }
+  .orators_all .orator.active .orator__details footer .orator__about-CTA {
+    padding-inline: 1rem;
   }
 }
 
