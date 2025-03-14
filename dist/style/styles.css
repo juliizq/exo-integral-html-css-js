@@ -399,12 +399,6 @@ main {
     margin: 0 auto;
   }
 }
-@media (desktop) {
-  .orators_all {
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-    max-width: 1000px;
-  }
-}
 .orators_all .orator__default {
   display: flex;
   padding-block: 2.5rem;
@@ -612,8 +606,6 @@ main {
 }
 
 footer {
-  width: 100%;
-  height: 5rem;
   background-color: #343237;
 }
 

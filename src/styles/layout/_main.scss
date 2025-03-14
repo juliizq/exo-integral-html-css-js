@@ -77,8 +77,6 @@ main{
   }
 
   @media (desktop) { // Desktop (1024px en adelante)
-    grid-template-columns: repeat(3, minmax(250px, 1fr)); // Tamaño más cómodo
-    max-width: 1000px;
 }
 
 .orator{
