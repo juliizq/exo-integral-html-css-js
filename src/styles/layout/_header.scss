@@ -2,8 +2,103 @@
 @import "../base/variables";
 @import "../base/webfonts";
 
-nav {
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: $margin-xs;
+  position: relative;
+
+  &__logo{
+    width: 6rem;
+  }
+
+  .nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 1Rem;
+
+    .menu__icon{
+      font-size: 1.1rem;
+    }
+
+    .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .toggle-icon{
+        font-size: 1.2rem;
+      }
   
+      // 💡 Cuando el botón está activo, cambiamos el color del ícono
+      &.active {
+        .toggle-icon {
+          color: white;
+          z-index: 1000;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .menu__list{
+      list-style: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #3C1BB2;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
+      transform: translateY(-100%);
+      z-index: 100;
+      padding-inline: 2rem;
+      padding-block-end: 3rem;
+      transition: all 0.8s cubic-bezier(0.63, 0, 0.25, 1.01);
+      gap: 2rem;
+      opacity: 0;
+
+      &.open{
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .menu__item {
+        .nav__link {
+          font-size: 1.728rem;
+          color: $on-primary;
+          font-family: 'maven';
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $on-primary;
+          }
+        }
+
+        &:last-child a.nav__link{
+          color: $secondary;
+        }
+      }
+
+      &-icon{
+        font-size: 2rem;
+        color: $on-primary;
+      }
+
+
+    }
+
+  }
+
+
+
+
 
   /* Tablet (>= 768px) */
   @include breakpoint(tablet) {
@@ -18,41 +113,5 @@ nav {
   /* Large screens (>= 1440px) */
   @include breakpoint(large) {
     margin-inline: $margin-lg;
-  }
-}
-
-.nav {
-  //width: 100%;
-  min-height: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: $margin-xs;
-
-  &__logo {
-    width: 6rem;
-  }
-
-  &__menu-mobile {
-    display: flex;
-    gap: .5rem;
-
-    &-icon {
-      font-size: 1.1rem;
-      color: $on-background-primary;
-    }
-  }
-
-  /* Tablet (>= 768px) */
-  @include breakpoint(tablet) {
-  }
-
-  /* Desktop (>= 1024px) */
-  @include breakpoint(desktop) {
-  }
-
-  /* Large screens (>= 1440px) */
-  @include breakpoint(large) {
   }
 }

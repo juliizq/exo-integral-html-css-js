@@ -185,4 +185,15 @@ oratorsData.forEach(orator => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menuList = document.querySelector(".menu__list");
+  
+    menuToggle.addEventListener("click", () => {
+      menuList.classList.toggle("open"); // Abre/Cierra el menú
+      menuToggle.classList.toggle("active"); // Cambia el color del ícono
+    });
+  });
+
+
 

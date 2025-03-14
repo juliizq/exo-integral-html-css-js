@@ -305,34 +305,12 @@ p {
   content: "\e94f";
 }
 
-nav {
-  /* Tablet (>= 768px) */
-  /* Desktop (>= 1024px) */
-  /* Large screens (>= 1440px) */
-}
-@media (min-width: 768px) {
-  nav {
-    margin-inline: 24px;
-  }
-}
-@media (min-width: 1024px) {
-  nav {
-    margin-inline: 32px;
-  }
-}
-@media (min-width: 1440px) {
-  nav {
-    margin-inline: 48px;
-  }
-}
-
 .nav {
-  min-height: 4rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-inline: 16px;
+  position: relative;
   /* Tablet (>= 768px) */
   /* Desktop (>= 1024px) */
   /* Large screens (>= 1440px) */
@@ -340,14 +318,86 @@ nav {
 .nav__logo {
   width: 6rem;
 }
-.nav__menu-mobile {
+.nav .nav__menu {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1Rem;
 }
-.nav__menu-mobile-icon {
+.nav .nav__menu .menu__icon {
   font-size: 1.1rem;
-  color: #6A5F86;
 }
+.nav .nav__menu .menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .nav__menu .menu-toggle .toggle-icon {
+  font-size: 1.2rem;
+}
+.nav .nav__menu .menu-toggle.active .toggle-icon {
+  color: white;
+  z-index: 1000;
+  font-size: 1.6rem;
+}
+.nav .nav__menu .menu__list {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #3C1BB2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  transform: translateY(-100%);
+  z-index: 100;
+  padding-inline: 2rem;
+  padding-block-end: 3rem;
+  transition: all 0.8s cubic-bezier(0.63, 0, 0.25, 1.01);
+  gap: 2rem;
+  opacity: 0;
+}
+.nav .nav__menu .menu__list.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+.nav .nav__menu .menu__list .menu__item .nav__link {
+  font-size: 1.728rem;
+  color: #FEFEFE;
+  font-family: "maven";
+  transition: all 0.3s ease-in-out;
+}
+.nav .nav__menu .menu__list .menu__item .nav__link:hover {
+  color: #FEFEFE;
+}
+.nav .nav__menu .menu__list .menu__item:last-child a.nav__link {
+  color: #FF3700;
+}
+.nav .nav__menu .menu__list-icon {
+  font-size: 2rem;
+  color: #FEFEFE;
+}
+@media (min-width: 768px) {
+  .nav {
+    margin-inline: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav {
+    margin-inline: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav {
+    margin-inline: 48px;
+  }
+}
+
 main {
   position: relative;
 }
