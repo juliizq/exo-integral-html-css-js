@@ -803,6 +803,53 @@ main {
   font-size: 1.2rem;
   color: #DDC7B3;
 }
+@media (min-width: 768px) {
+  .page-footer {
+    gap: 0.3rem;
+  }
+  .page-footer__title {
+    color: #00C2C4;
+  }
+  .page-footer__container-location {
+    justify-content: flex-start;
+    border: none;
+    border-radius: 0;
+    padding-inline: 0;
+  }
+  .page-footer__content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .page-footer__content .page-footer__description {
+    flex: 2;
+  }
+  .page-footer__content .page-footer__callcenter {
+    flex: 1;
+  }
+  .page-footer__brands-all {
+    margin-block: 4rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .page-footer__bottom {
+    display: flex;
+    align-items: center;
+  }
+  .page-footer__bottom .page-footer__rrss {
+    border: 1px solid #5b5459;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    flex: 2;
+  }
+  .page-footer__bottom .page-footer__rrss .rrss__title {
+    color: #00C2C4;
+  }
+  .page-footer__bottom .page-footer__copyright {
+    flex: 1;
+    padding: 2rem;
+  }
+}
 
 body {
   background-color: #F9F9F9;

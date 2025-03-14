@@ -129,4 +129,62 @@
     }
   }
 
+  @include breakpoint(tablet){
+    gap: .3rem;
+
+    &__title{
+      color: #00C2C4;
+    }
+
+    &__container-location{
+      justify-content: flex-start;
+      border: none;
+      border-radius: 0;
+      padding-inline: 0;
+
+    }
+
+    &__content{
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      .page-footer__description{
+        flex: 2;
+      }
+
+      .page-footer__callcenter{
+        flex:1;
+      }
+
+    }
+
+    &__brands-all{
+      margin-block: 4rem;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    &__bottom{
+      display: flex;
+      align-items: center;
+
+      .page-footer__rrss{
+        border: 1px solid $on-surface-secondary;
+        border-radius: .4rem;
+        padding: 1rem;
+        flex: 2;
+
+        .rrss__title{
+          color: #00C2C4;
+        }
+      }
+
+      .page-footer__copyright{
+        flex: 1;
+        padding: 2rem;
+      }
+    }
+
+  }
 }
