@@ -69,12 +69,14 @@ main {
   background-color: $surface-secondary;
 
   @include breakpoint(tablet) {
-    grid-template-columns: repeat(
-      3,
-      minmax(180px, 1fr)
+    padding-block-start: 2rem;
+    padding-block-end: 4rem;
+    grid-template-columns: repeat(3,minmax(200px, 1fr)
     ); // Tarjetas más compactas
     max-width: 800px; // Limita la expansión
-    margin: 0 auto;
+    padding-inline: $margin-sm;
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
   }
 
   @media (desktop) {
@@ -178,6 +180,38 @@ main {
           }
         }
       }
+    }
+
+    //Responsive
+
+    @include breakpoint(tablet){
+      &__default{
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding-block: 0;
+        padding-inline: 0;
+        .orator__left {
+
+          .orator__location {
+
+          }
+        }
+  
+        .orator__right {
+          .orator__pict {
+            width: 100%;
+            border-radius: 0;
+            overflow: inherit;
+            margin: 0;
+          }
+        }
+
+        .orator__left{
+          padding-inline-start: 1rem;
+        }
+      }
+      
+
     }
   }
 }

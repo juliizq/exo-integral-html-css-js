@@ -444,9 +444,13 @@ main {
 }
 @media (min-width: 768px) {
   .orators_all {
-    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    padding-block-start: 2rem;
+    padding-block-end: 4rem;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     max-width: 800px;
-    margin: 0 auto;
+    padding-inline: 24px;
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
   }
 }
 .orators_all .orator {
@@ -528,6 +532,23 @@ main {
 }
 .orators_all .orator.active .orator__details footer .orator__about-CTA {
   padding-inline-start: 5rem;
+}
+@media (min-width: 768px) {
+  .orators_all .orator__default {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    padding-block: 0;
+    padding-inline: 0;
+  }
+  .orators_all .orator__default .orator__right .orator__pict {
+    width: 100%;
+    border-radius: 0;
+    overflow: inherit;
+    margin: 0;
+  }
+  .orators_all .orator__default .orator__left {
+    padding-inline-start: 1rem;
+  }
 }
 
 .become-speaker {
